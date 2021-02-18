@@ -14,6 +14,13 @@ class SampleViewModel(application: Application) : AndroidViewModel(application),
 
     fun fetchItems() {
         adapterItems.add(SampleAdapter.AdapterItem.SampleItem("test"))
+        adapterItems.add(SampleAdapter.AdapterItem.SampleItem("test"))
+        adapterItems.add(SampleAdapter.AdapterItem.SampleItem("test"))
+        adapterItems.add(SampleAdapter.AdapterItem.SampleItem("test"))
+        adapterItems.add(SampleAdapter.AdapterItem.SampleItem("test"))
+        adapterItems.add(SampleAdapter.AdapterItem.SampleItem("test"))
+
+
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
