@@ -18,8 +18,9 @@ class SampleAdapter(val viewModel: SampleViewModel) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return SampleItemViewHolder(DataBindingUtil.inflate(inflater, R.layout.list_item_sample, parent, false))
-
+        return SampleItemViewHolder(
+            DataBindingUtil.inflate(inflater, R.layout.list_item_sample, parent, false)
+        )
     }
 
     override fun getItemCount(): Int {
